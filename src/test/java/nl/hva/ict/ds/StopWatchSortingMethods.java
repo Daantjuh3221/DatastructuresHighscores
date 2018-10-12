@@ -2,6 +2,7 @@ package nl.hva.ict.ds;
 
 import nl.hva.ict.ds.sort.methods.BucketSortHighScores;
 import nl.hva.ict.ds.sort.methods.InsertionSortHighScores;
+import nl.hva.ict.ds.sort.methods.PriorityQueueHighScores;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -13,7 +14,7 @@ public class StopWatchSortingMethods {
     public void setup() {
         // Here you should select your implementation to be tested.
         //highScores = new DummyHighScores();
-        //highScores = new InsertionSortHighScores();
+        highScores = new InsertionSortHighScores();
         //highScores = new BucketSortHighScores();
         //highScores = new PriorityQueueHighScores();
     }

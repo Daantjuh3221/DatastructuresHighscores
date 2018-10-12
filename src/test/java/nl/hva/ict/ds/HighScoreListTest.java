@@ -3,6 +3,7 @@ package nl.hva.ict.ds;
 import java.util.List;
 import nl.hva.ict.ds.sort.methods.BucketSortHighScores;
 import nl.hva.ict.ds.sort.methods.InsertionSortHighScores;
+import nl.hva.ict.ds.sort.methods.PriorityQueueHighScores;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -29,7 +30,7 @@ public class HighScoreListTest {
         //highScores = new DummyHighScores();
         //highScores = new InsertionSortHighScores();
         //highScores = new BucketSortHighScores();
-        //highScores = new PriorityQueueHighScores();
+        highScores = new PriorityQueueHighScores();
 
         nearlyHeadlessNick = new Player("Nicholas", "de Mimsy-Porpington", getHighScore() % 200);
 
